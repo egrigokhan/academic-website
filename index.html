@@ -1,0 +1,533 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Gokhan Egri</title>
+  
+  <meta name="author" content="Jon Barron">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+      
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&amp;display=swap" rel="stylesheet">
+      
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script>
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+  </script>
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                              <name>Gokhan Egri</name><br>
+                              <span>(ghoek-hun air-e)</span>
+                            </p>
+              <p style="text-align:center">
+                <a href="mailto:egrigokhan@gmail.com">Email</a> &nbsp;/&nbsp;
+                <a class="disabled" href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
+                <a class="disabled" href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?hl=en&amp;user=jktWnL8AAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://twitter.com/gokhan_egri">Twitter</a> &nbsp;/&nbsp;
+                <a href="https://github.com/egrigokhan">Github</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:30%;max-width:40%">
+              <a href="https://media-exp1.licdn.com/dms/image/C5603AQF6dFBHbYZBUw/profile-displayphoto-shrink_400_400/0/1597792564217?e=1613001600&amp;v=beta&amp;t=56yv4lBhpKwgqoKnzjGKH7YISlaLTF5-oMTDOIvcbiA"><img style="width:100%;max-width:100%;border-radius: 15px;" alt="profile photo" src="images/gokhan_pp.jpeg" class="hoverZoomLink"></a>
+            </td>
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p>I am a first-year PhD student in <a href="https://ai.google/research">Prof. Todd Zickler's group</a> at <a href="https://www.seas.harvard.edu/computer-science">Harvard CS</a> where I work on computer vision and machine learning. I earned my BS in Electrical Engineering from <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a> in 2016.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading class="hidden" style="margin-right: 16px;"><a style="font-size: 18px; font-weight: 400; text-decoration: underline; color: black;" onclick="let_there_be('research')">Research</a></heading>
+              <heading style="margin-right: 16px;"><a style="font-size: 18px; font-weight: 400; text-decoration: underline; color: black;" onclick="let_there_be('apps')">Apps</a></heading>
+              <heading style="margin-right: 16px;"><a style="font-size: 18px; font-weight: 400; text-decoration: underline; color: black;" onclick="let_there_be('projects')">Projects</a></heading>
+              <heading style="margin-right: 16px;"><a style="font-size: 18px; font-weight: 400; text-decoration: underline; color: black;" onclick="let_there_be('misc')">Misc.</a></heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table class="hidden" id="pubs_table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="nerv_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                <source src="images/hotdog.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src="images/hotdog.jpg" width="160">
+              </div>
+              <script type="text/javascript">
+                function nerv_start() {
+                  document.getElementById('nerv_image').style.opacity = "1";
+                }
+
+                function nerv_stop() {
+                  document.getElementById('nerv_image').style.opacity = "0";
+                }
+                nerv_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>NeRV: Neural Reflectance and Visibility Fields for Relighting and View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              <a href="https://boyangdeng.com/">Boyang Deng</a>,
+              <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=4XyDdvhhjVo">video</a> /
+              <a href="https://arxiv.org/abs/2012.03927">arXiv</a>
+              <p></p>
+              <p>Using neural approximations of expensive visibility integrals lets you recover relightable NeRF-like models.</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table class="" id="apps_table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          
+          
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                
+                <img style="border-radius: 10px;" src="images/tempo_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Tempo: Playlists for Spotify</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/tempo-playlists-for-spotify/id1500435845">app store</a> /
+              <a href="https://www.youtube.com/watch?v=vhp_ks-0fVE">video</a>
+              <p></p>
+              
+              
+              
+
+
+              <p>Tempo's intuitive user interface allows you to easily create unique playlists of up to 20 songs by specifying the BPM flow of the playlist and the genres. With your finger! By drawing! Isn't that something?</p>
+
+
+              <p>Also, with the Spotify integration, you can directly save your playlists to your Spotify account!</p>
+
+
+              
+            </td>
+          </tr>
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img style="border-radius: 10px;" src="images/sprouts_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Sprouts Game</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/sprouts-game/id1479115453">app store</a>
+              <p></p>
+              <p>Sprouts is a pen-and-paper strategy game invented by John H. Conway and Michael S. Paterson in 1967 at the University of Cambridge.</p>
+
+
+              
+
+
+              
+
+
+              
+
+
+              <p>Here is a link to a video by Vsauce2 about Sprouts: https://www.youtube.com/watch?v=XKsTGdN-4_M</p>
+
+
+              
+
+              
+              
+            </td>
+          </tr>
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <img style="border-radius: 10px;" src="images/puro_logo.png" width="100%">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Puro</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/tempo-playlists-for-spotify/id1450861216">app store</a>
+              <p></p>
+              
+              
+              <p>The game is simple: the numbers on each plane represent the total number of cubes in the row in front of the number plane.</p>
+
+
+              <p>All you've got to do is to find out the shape from these counts and build it up, layer by layer.</p>
+
+
+              
+
+
+              
+            </td>
+          </tr>
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="nerv_image"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                <img src="images/tempo_logo.png">
+                Your browser does not support the video tag.
+                </video></div>
+                <img style="border-radius: 10px;" src="images/hoop_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Hoop: AR Motion Game
+</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/tempo-playlists-for-spotify/id1480081371">app store</a> /
+              <a href="https://www.youtube.com/watch?v=vhp_ks-0fVE">video</a>
+              <p></p>
+              
+              
+              <p>To shoot the ball, position yourself in front of the hoop and then flick your wrist. The harder you flick the faster it goes!</p>
+
+
+              
+
+
+              <p>Hoop AR presents a revolutionary interactive AR experience where shooting a basket finally feels like shooting a basket, can you believe it?</p>
+
+
+              
+            </td>
+          </tr>
+        <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="nerv_image"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                <img src="images/tempo_logo.png">
+                Your browser does not support the video tag.
+                </video></div>
+                <img style="border-radius: 10px;" src="images/btdt_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Been There, Done That!
+</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/tempo-playlists-for-spotify/id1480911992">app store</a> /
+              <a href="https://www.youtube.com/watch?v=vhp_ks-0fVE">video</a>
+              <p></p>
+              <p>BTDT is the best way to keep track of the countries you've been to, right on your phone!</p>
+              
+              <p>The beautifully designed, intuitive user interface allows you to add countries you've been to as well as showcase some interesting statistics about your travels (and boast about them online of course).</p>
+
+
+              
+
+
+              
+
+
+              
+            </td>
+          </tr><tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="nerv_image"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                <img src="images/tempo_logo.png">
+                Your browser does not support the video tag.
+                </video></div>
+                <img style="border-radius: 10px;" src="images/toak_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>TOAK: Two of a Kind
+</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/tempo-playlists-for-spotify/id1490708911">app store</a> /
+              <a href="https://www.youtube.com/watch?v=vhp_ks-0fVE">video</a>
+              <p></p>
+              <p>Finally a celebrity similarity app which actually works. Our app uses a state-of-the-art AI backbone to find your closest celebrity match among hundreds of A-list celebrities.</p>
+              
+              
+
+
+              
+
+
+              
+
+
+              
+            </td>
+          </tr><tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                
+                <img style="border-radius: 10px;" src="images/colayer_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Colayer
+</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/colayer-puzzle/id1497059426">app store</a>
+              <p></p>
+              <p>Colayer is the ultimate 2D puzzle game, fusing colors and layers and stacking them on top of each other for you to figure out.
+</p>
+              
+              <p>The goal of the game is simple: Remove all tiles color by color until you're left with an empty board.
+</p>
+
+
+              
+
+
+              
+
+
+              
+            </td>
+          </tr><tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="nerv_image"><video width="100%" height="100%" muted="" autoplay="" loop="">
+                <img src="images/tempo_logo.png">
+                Your browser does not support the video tag.
+                </video></div>
+                <img style="border-radius: 10px;" src="images/metaphoria_logo.png" width="100%">
+              </div>
+              
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>Metaphoria
+</papertitle>
+              </a>
+              <br>
+              <a href="https://apps.apple.com/us/app/metaphoria/id1478663599">app store</a>
+              <p></p>
+              <p>Use the small circle to defend the big circle from red circles. Green circles are your friend.
+</p>
+              
+              
+
+
+              
+
+
+              
+
+
+              
+            </td>
+          </tr></tbody></table>
+        <table class="hidden" id="proj_table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+                  <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <div class="one">
+                        <img style="border-radius: 10px; background-color: white; object-fit: contain;" src="images/dhmq_logo.png" width="100%" height="100%">
+                      </div>
+                      
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                        <papertitle>Daily Haruki Murakami Quotes</papertitle>
+                      </a>
+                      <br>
+                      <a href="https://www.instagram.com/daily_haruki_murakami_quotes/">instagram</a>
+                      <p></p>
+                      <p>This is an Instagram page I made which shares AI-generated wisdom based on one of my favorite authors, Haruki Murakami. Since Instagram is weird about automation, this is connected to my Telegram so it's not as much "daily" as "when I remember to post".</p>
+                      
+                      <p>Check it out, there's some real wisdom there...</p>
+                    </td>
+                  </tr>
+                  
+                  <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <div class="one">
+                        <img style="border-radius: 10px;background-color: navajowhite;object-fit: contain;" src="images/ibnet_logo.png" width="100%" height="100%">
+                      </div>
+                      
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                        <papertitle>İçkiliydi Bilmem Net (this one gets lost in the translation)</papertitle>
+                      </a>
+                      <br>
+                      <a href="https://www.instagram.com/ickiliydibilmemnet/">instagram</a>
+                      <p></p>
+                      <p>This is an Instagram page I made which used neural image captioning to caption funny images in Turkish.</p>
+                      
+                      
+                    </td>
+                  </tr>
+                  
+                  <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+                                      <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                          <img style="border-radius: 10px; background-color: white; object-fit: contain;" src="images/themify_logo.png" width="100%" height="100%">
+                                        </div>
+                                        
+                                      </td>
+                                      <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                                          <papertitle>Themify</papertitle>
+                                        </a>
+                                        <br>
+                                        <a style="
+                  " class="disabled">website (OpenAI has closed beta-access for GPT-3)</a>
+                                        <p></p>
+                                        <p>A GPT-3 application which takes in examples of a set and outputs the general theme.</p>
+                                        
+                                        
+                                      </td>
+                                    </tr>
+                  <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+                                      <td style="padding:20px;width:25%;vertical-align:middle">
+                                        <div class="one">
+                                          <img style="border-radius: 10px;background-color: white;:;" src="images/cas_logo.png" width="100%" height="100%">
+                                        </div>
+                                        
+                                      </td>
+                                      <td style="padding:20px;width:75%;vertical-align:middle">
+                                        <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                                          <papertitle>Cards Against Singularity</papertitle>
+                                        </a>
+                                        <br>
+                                        <a style="
+                  " class="disabled">website (OpenAI has closed beta-access for GPT-3)</a>
+                                        <p></p>
+                                        <p>A GPT-3 application which generates Cards Against Humanity type responses to custom prompts.</p>
+                                        
+                                        
+                                      </td>
+                                    </tr>
+  </tbody></table>
+        <table class="hidden" id="misc_table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+                  
+                        <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+                          <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                              <img style="border-radius: 10px; background-color: white; object-fit: cover;" src="images/suzanne.gif" width="100%" height="100%">
+                            </div>
+                            
+                          </td>
+                          <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                              <papertitle>Voxel-based Visual Hull Implementation in Python</papertitle>
+                            </a>
+                            <br>
+                            <a href="https://github.com/egrigokhan/python-visual-hull">github</a>
+                            <p></p>
+                            
+                            
+                            <p>Python implementation for creating object visual hulls from camera masks.</p>
+                          </td>
+                        </tr>
+                        
+                        <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+                                                  <td style="padding:20px;width:25%;vertical-align:middle">
+                                                    <div class="one">
+                                                      <img style="border-radius: 10px;background-color: white;object-fit: contain; object-fit: scale-down;" src="images/matlab_room_sim.png" width="100%" height="100%">
+                                                    </div>
+                                                    
+                                                  </td>
+                                                  <td style="padding:20px;width:75%;vertical-align:middle">
+                                                    <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                                                      <papertitle>MATLAB 2D Room Simulator</papertitle>
+                                                    </a>
+                                                    <br>
+                                                    <a href="https://github.com/egrigokhan/matlab-2d-room-simulator">github</a>
+                                                    <p></p>
+                                                    
+                                                    
+                                                    <p>A 2D room simulator which simulates point cloud sampling and depth map acquisition given a 2D floor plan
+                        </p>
+                                                  </td>
+                                                </tr>
+        </tbody></table>
+
+<script>
+    function let_there_be(something) {
+        pubs_table = document.getElementById("pubs_table")
+        apps_table = document.getElementById("apps_table")
+        proj_table = document.getElementById("proj_table")
+        misc_table = document.getElementById("misc_table")
+        
+        if (something === "research") {
+            pubs_table.classList.remove("hidden")
+            apps_table.classList.add("hidden")
+            proj_table.classList.add("hidden")
+            misc_table.classList.add("hidden")
+        } else if (something === "apps") {
+            apps_table.classList.remove("hidden")
+            pubs_table.classList.add("hidden")
+            proj_table.classList.add("hidden")
+            misc_table.classList.add("hidden")
+        } else if (something === "projects") {
+            proj_table.classList.remove("hidden")
+            pubs_table.classList.add("hidden")
+            apps_table.classList.add("hidden")
+            misc_table.classList.add("hidden")
+        } else {
+            misc_table.classList.remove("hidden")
+            pubs_table.classList.add("hidden")
+            apps_table.classList.add("hidden")
+            proj_table.classList.add("hidden")
+        }
+    }
+</script>
+
+</body></html>
