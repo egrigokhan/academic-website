@@ -52,6 +52,14 @@
                         <td style="padding:2.5%;width:63%;vertical-align:middle">
                            <p>I am a first-year PhD student in <a href="https://ai.google/research">Prof. Todd Zickler's group</a> at <a href="https://www.seas.harvard.edu/computer-science">Harvard CS</a> where I work on computer vision and machine learning. I earned my BS in Electrical Engineering from <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a> in 2020.
                            </p>
+                           <button style="
+                               font-family: 'Inconsolata';
+                               border: none;
+                               border-radius: 5px;
+                               text-align: center;
+                               padding: 6px 8px;
+                           " onclick="respondToHi()">Say Hi!
+                           </button>
                         </td>
                      </tr>
                   </tbody>
@@ -534,6 +542,10 @@
                           apps_table.classList.add("hidden")
                           proj_table.classList.add("hidden")
                       }
+                  }
+                  
+                  function respondToHi() {
+                     console.log("You said 'Hi!', Gokhan is perplexed...")
                   }
                </script>
    </body>
