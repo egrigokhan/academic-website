@@ -145,10 +145,10 @@ a {
 
 .chain {
     border-left: 6px solid lightgray;
-    height: 30px;
+    height: 24px;
     position: relative;
     left: 50%;
     margin-left: -3px;
     top: 0;
-    border-left-style: dotted;
+    border-left-style: solid;
 }
