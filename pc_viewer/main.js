@@ -18,7 +18,7 @@ function init() {
   scene.add(new THREE.AmbientLight(0x404040)) 
   
   const loader = new THREE.OBJLoader()
-  loader.load('https://github.com/egrigokhan/egrigokhan.github.io/blob/main/scan.obj',
+  loader.load('./scan.obj',
               (obj) => {
                     let material = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 0.25 })
                     mesh = new THREE.Points(obj.children[0].geometry, material)
