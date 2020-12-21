@@ -46,8 +46,8 @@
                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                   <tbody>
                      <tr style="padding:0px">
-                        <td style="padding:2.5%;width:30%;max-width:40%">
-                           <a href="https://media-exp1.licdn.com/dms/image/C5603AQF6dFBHbYZBUw/profile-displayphoto-shrink_400_400/0/1597792564217?e=1613001600&amp;v=beta&amp;t=56yv4lBhpKwgqoKnzjGKH7YISlaLTF5-oMTDOIvcbiA"><img style="width:100%;max-width:100%;border-radius: 15px;" alt="profile photo" src="images/gokhan_pp.jpeg" class="hoverZoomLink"></a>
+                        <td id="pp" style="padding:2.5%;width:30%;max-width:40%">
+                          <img id="pp_img" style="width:200px; height: 200px; border-radius: 15px;" alt="profile photo" src="images/gokhan_pp.jpeg" class="hoverZoomLink">
                         </td>
                         <td style="padding:2.5%;width:63%;vertical-align:middle">
                            <p>I am a first-year PhD student in <a href="https://ai.google/research">Prof. Todd Zickler's group</a> at <a href="https://www.seas.harvard.edu/computer-science">Harvard CS</a> where I work on computer vision and machine learning. I earned my BS in Electrical Engineering from <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a> in 2020.
@@ -583,5 +583,118 @@
                      console.log("You said 'Hi!', Gokhan is perplexed...")
                   }
                </script>
+      
+               <script type="module">
+
+                import * as THREE from './pc_viewer/three.module.js';
+
+                import { XYZLoader } from './pc_viewer/XYZLoader.js';
+
+                let camera, scene, renderer, clock;
+
+                let points;
+
+                let pp, pp_img;
+
+                init();
+                animate();
+
+                function init() {
+
+                    pp = document.getElementById("pp")
+                    pp_img = document.getElementById("pp_img")
+
+                    /*
+                    pp.width = pp_img.width
+                    pp.height = pp_img.height
+
+                    pp.style.width = pp_img.style.width
+                    pp.style.height = pp_img.style.height
+                    */
+
+                    camera = new THREE.PerspectiveCamera( 2, 1, 0.1, 100 );
+                    camera.position.set( 10, 0, 10 );
+
+                    scene = new THREE.Scene();
+                    scene.add( camera );
+                    camera.lookAt( scene.position );
+
+                    clock = new THREE.Clock();
+
+                    const loader = new XYZLoader();
+                    loader.load( './pc_viewer/pp_pc.xyz', function ( geometry ) {
+
+                        geometry.center();
+
+                        const vertexColors = ( geometry.hasAttribute( 'color' ) === false );
+
+                        console.log(geometry.hasAttribute( 'color' ))
+
+                                const material = new THREE.PointsMaterial( { color: "#00FF00", size: 0.08, vertexColors: vertexColors } );
+
+                        points = new THREE.Points( geometry, material );
+                        scene.add( points );
+
+                    } );
+
+                    //
+
+                    renderer = new THREE.WebGLRenderer();
+                    renderer.setPixelRatio( window.devicePixelRatio );
+                    renderer.setSize( 200, 200 );
+                    renderer.domElement.id = "port"
+                    renderer.domElement.style.width = "200px"
+                    renderer.domElement.style.height = "200px"
+                    renderer.domElement.style.display = "none"
+                    pp.appendChild( renderer.domElement );
+
+                    //
+
+                    window.addEventListener( 'resize', onWindowResize, false );
+
+                }
+
+                function onWindowResize() {
+
+                    camera.aspect = 1;
+                    camera.updateProjectionMatrix();
+
+                    renderer.setSize( 200, 200 );
+
+                }
+
+                function animate() {
+
+                    requestAnimationFrame( animate );
+
+                    const delta = clock.getDelta();
+
+                    if ( points ) {
+
+                        //points.rotation.x += delta * 0.2;
+                        points.rotation.y += delta * 0.5;
+
+                    }
+
+                    renderer.render( scene, camera );
+
+                }
+
+            </script>
+
+            <script>
+                function letThereBeOneMoreOrLessDimension() {
+                    pp_img = document.getElementById("pp_img")
+                    port = document.getElementById("port")
+
+                    if(port.style.display == "none") {
+                        port.style.display = "block"
+                        pp_img.style.display = "none"
+                    } else if(pp_img.style.display == "none") {
+                        port.style.display = "none"
+                        pp_img.style.display = "block"
+                    }
+                }
+            </script>
    </body>
 </html>
