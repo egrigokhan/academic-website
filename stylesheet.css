@@ -74,34 +74,38 @@ a:hover {
   text-decoration: none;
 }
 
-body,
+body {
+  font-family: 'Inconsolata', monospace, sans-serif;
+  font-size: 16px
+}
+
 td,
 th,
 tr,
 p,
 a {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: inherit;
   font-size: 16px
 }
 
 strong {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: inherit;
   font-size: 16px;
 }
 
 heading {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: inherit;
   font-size: 24px;
 }
 
 papertitle {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700
 }
 
 name {
-  font-family: 'Inconsolata', monospace, sans-serif;
+  font-family: inherit;
   font-size: 32px;
 }
 
