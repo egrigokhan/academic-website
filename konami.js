@@ -38,10 +38,9 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  document.body.style.backgroundImage = "url('images/cheatBackground.png')";
-
-  var audio = new Audio('audio/pling.mp3');
-  audio.play();
-
-  alert("cheats activated");
+  if(document.body.style.fontFamily === "Gloria Hallelujah") {
+    document.body.style.fontFamily = "Inconsolata";
+  } else {
+    document.body.style.fontFamily = "Gloria Hallelujah";
+  }
 }
