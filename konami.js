@@ -42,5 +42,6 @@ function activateCheats() {
     document.body.style.fontFamily = "Inconsolata";
   } else {
     document.body.style.fontFamily = "Gloria Hallelujah";
+    document.getElementById("pp_img").src = "images/goggle.png"
   }
 }
