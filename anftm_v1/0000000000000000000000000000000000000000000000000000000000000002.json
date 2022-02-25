@@ -1,0 +1,13 @@
+{
+  "name": "ANFTM #1 - The Water Project",
+  "description":"This is a unit donation to The Water Project",
+  "misc":{"id": "1",
+          "attributes": [
+            {
+              "value": "The Water Project",
+              "trait_type": "Charity"
+            }
+          ]
+         },
+  "image": "https://egrigokhan.github.io/anftm_v1/0000000000000000000000000000000000000000000000000000000000000001.png"
+}
